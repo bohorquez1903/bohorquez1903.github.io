@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ejercicio__6__landing_page__portafolio </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    
+    <!-- vincula la libreria con la pagina web --> 
+    <!-- Link Swiper's CSS --> 
+    <link
+      rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- libreria de animaciones --> 
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+
+
+<nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="#seccion1">LAURA COY</a> </h1>
+            </div>
+            <ul>
+                <li><a href="#seccion2"> <i class="fa-solid fa-face-grin"></i> SOBRE MI</a></li>
+                <li><a href="#seccion3"> <i class="fa-solid fa-camera"></i> TRABAJOS</a></li>
+                <li><a href="#seccion4"> <i class="fa-solid fa-phone"></i> CONTACTO</a></li>
+            </ul>
+        </div>
+</nav>
+
+
+<section class="bienvenida" id="seccion1">
+  
+  <div class="wrap"> <!--envoltura/contenedor-->
+
+    <div class= bienvenida1 id="seccion1"> 
+      <h1><a href="#"> <img src="imgs/laura.jpg" alt="foto laura"></a></h1>
+    </div>
+
+      <h1>  MI NOMBRE ES: </h1>
+        <p>Laura Vanessa Coy Bohórquez </p>
+        <h2> Soy Diseñadora Gráfica </h2>
+        <p> En estos enlaces podras encontras dos de mis proyectos realizados: </p>
+        <br>
+        <ul>
+        <li><a href="assets/Proyecto 1 - Contexto e Identidad.pdf"> <i class="fa-solid fa-briefcase"></i>  Proyecto 1 </a></li>
+        <li><a href="assets/DISEÑO FINAL PROYECTO 2.pdf"> <i class="fa-solid fa-pencil"></i> Proyecto 2 </a></li>
+        </ul>
+        <br>
+        <div class="down animate__animated animate__fadeInDown animate__infinite	infinite">
+        <a href="#seccion2">  <i class="fa-solid fa-circle-chevron-down"></i> 
+        </div>
+        </div>
+</section>
+
+
+<section class="servicios" id="seccion2">
+        
+  <section class="contenedor2">
+   
+    <article class="contenedor_2">
+        <h2> MÁS SOBRE MI... </h2>
+        <p> En este sitio podras apreciar algunos de los trabjos que he realizado en el transcurso de mi carrera profesional, donde actualmente curso el quinto semestre de mi profesión. <br> Acontinuación verás algunos de mis proyectos de Fotografía Publicitaria:</p></p>
+        
+      </article>
+
+    <div class="logo_2">
+        <h1><a href="#"> <img src="imgs/fotografia.png" alt="Logo blanco"> Proyecto 1 Fotografía Publicitaria</a></h1>
+        <h1><a href="#"> <img src="imgs/img_papas.jpg" alt="Logo de negro"> Proyecto 2 Fotografía Publicitaria </a></h1>
+        <h1><a href="#"> <img src="imgs/papas_foto.png" alt="Logo azul"> Proyecto 3 Fotografía Publicitaria</a></h1>
+        
+    </div>
+    
+</section>          
+
+</section>
+
+
+<section class="trabajos" id="seccion3">
+    <div class="wrap"> <!--envoltura/contenedor-->
+        <h1>  Trabajos Fotográficos </h1>
+        <p> Algunas de las fotos que he realizado. </p>
+        <br>
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="imgs/pizza4.JPG" alt="" srcset=""> </div>
+          <div class="swiper-slide"> <img src="imgs/pizza1.JPG" alt="" srcset=""> </div>
+          <div class="swiper-slide"> <img src="imgs/pizza.JPG" alt="" srcset=""> </div>
+          <div class="swiper-slide"> <img src="imgs/pizza3.JPG" alt="" srcset=""> </div>
+   
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>    
+    </div>
+</section>
+
+
+<section class="contactos" id="seccion4">
+    <div class="wrap"> <!--envoltura/contenedor-->
+      <h1>  Sigueme en: </h1>
+      <br>
+        <ul>
+            <li><a href="https://www.facebook.com/lauravanesa.coybohorquez/" target="_blank"> <i class="fa-brands fa-facebook-f"></i> Facebook </a> </li>
+            <li><a href="https://www.instagram.com/bohorquez_1903/?hl=es" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram </a></li>
+            <br>
+      <h1>  Ubicame en: </h1>
+      <br>
+            <li> <i class="fa-solid fa-location-dot"></i>  Tv. 51a ##67B 90 </li>
+            <li> <i class="fa-solid fa-earth-americas"></i> Medellín/Antioquia</li>
+        </ul>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+        <h6><p id="footer">Creado por <a href="https://www.instagram.com/bohorquez_1903/?hl=es" target="_blank" >@bohorquez_1903</a> </div>
+        </h6>
+</section>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+</body>
+</html>

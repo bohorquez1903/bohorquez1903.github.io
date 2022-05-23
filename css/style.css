@@ -1,0 +1,256 @@
+:root{
+    --color_primario: #f1fffa;
+    --color_secundario: #93b7be;
+    --color_terciario: #d5c7bc;
+    --color_cuartenario: #2f6690;
+    --color_quinario: #454545;
+    --color_six: #5a189a;
+    --type: 'Montserrat', sans-serif;
+
+}
+
+html
+{
+scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--color_primario);
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    background-color: var(--color_primario);
+    position: fixed; /*las cosas se ueden fijas o estatica*/
+    width: 100%;
+    z-index: 2100;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: var(--color_six);
+    padding: .8em 1em;
+    border-radius: 4em;
+}
+
+nav .container ul li a:hover{
+    color: var(--color_primario);
+    background-color:var(--color_secundario);
+}
+
+.bienvenida1 img {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    max-width: 600px;
+    justify-content: flex-start;
+    flex-basis: 40%;
+    text-align: left;
+    flex-direction: column;
+}
+
+section .wrap {
+    display: flex;
+    flex-direction: column; /*centra sin neceidad de usar margin y padding*/
+    align-items: flex-end;
+    justify-content:center;
+    width: 100%;
+    height: 95vh; 
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: var(--color_primario);
+    font-size: 1em; /*em equivale a 16px*/
+}
+
+.bienvenida ul li {
+    display: inline;
+    padding: .2em;
+}
+
+.bienvenida ul li a{
+    font-size: 1em;
+    color: var(--color_secundario);
+    padding: .8em 1em;
+    border-radius: 200em;
+    background-color:var(--color_primario);
+}
+
+.bienvenida ul li a:hover{
+    color: var(--color_primario);
+    background-color:var(--color_cuartenario);
+}
+
+
+
+.bienvenida .down {
+    display: flex;
+    margin-top: 2em;
+    align-items:center;
+}
+
+.bienvenida a {
+    align-items: flex-end;
+}
+
+.bienvenida 
+{
+    background-color: var(--color_secundario);
+    
+    --top: 
+    linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
+    radial-gradient(farthest-side,#000 98%,#0000) bottom/100px 100px no-repeat;
+    -webkit-mask: var(--top);
+          mask: var(--top);
+}
+
+.h1 {
+    align-items: left;
+}
+
+.servicios
+{
+    background-color: var(--color_cuartenario);
+    
+    --bottom: radial-gradient(calc(10px + 50px) at 50% -10px,#0000 98%,#000);
+    -webkit-mask: var(--bottom);
+            mask: var(--bottom);
+    
+}
+
+.contenedor2 {
+    background-color: var(--color_terciario);
+    padding: 4em;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.contenedor_2 h2 {
+    padding: 0.2em;
+    color:var(--color_primario);
+    font-size: 2em;
+    letter-spacing: 5px;
+    text-align: center;
+
+}
+
+.contenedor_2 p {
+    padding-bottom: 0.8em;
+    color: var(--color_primario);
+    font-size: 1em;
+    align-items:center;
+    text-align: center;
+    display: flex;
+}
+
+.logo_2 {
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    margin: 22px;
+}
+
+.logo_2 a:hover {
+    display: flex;
+    justify-content: end;
+    margin: 22px;
+    box-shadow: 2px 5px 1px 1px var(--color_primario);
+    text-align: center;
+}
+
+.trabajos
+{
+    background-color: var(--color_quinario);
+
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+
+}
+
+.contactos
+{
+    background-color: var(--color_secundario);
+    align-items: flex-end;
+    clip-path: polygon(0 0,100% 50px,100% 100%,0 100%); margin-top: -40px;
+    
+}
+
+hr {
+    border-color: var(--color_cuartenario);
+    width: 100%;
+}
+
+/* swiper */
+
+.swiper {
+    width: 100%;
+    height: 60%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
